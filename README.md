@@ -5,13 +5,26 @@
 ### 1. Tạo file `1.txt`
 - Dán `queryid` vào mỗi dòng, mỗi dòng tương ứng với một tài khoản.
 
-### 2. Cài đặt các thư viện cần thiết
+### 2. Tạo file `config.json`
+- Cấu hình file `config.json` để điều chỉnh các thiết lập của script. Ví dụ:
+    ```json
+    {
+        "auto_upgrade": true,
+        "toolkit_upgrade_cost": 10,
+        "workbench_upgrade_cost": 10
+    }
+    ```
+    - `auto_upgrade`: Nếu `true` sẽ tự động nâng cấp, nếu `false` sẽ không tự động nâng cấp.
+    - `toolkit_upgrade_cost`: Số token cần thiết để nâng cấp toolkit.
+    - `workbench_upgrade_cost`: Số token cần thiết để nâng cấp workbench.
+
+### 3. Cài đặt các thư viện cần thiết
 - Chạy lệnh sau để cài đặt các thư viện:
     ```bash
     pip install requests termcolor
     ```
 
-### 3. Chạy script
+### 4. Chạy script
 - Để chạy script, sử dụng lệnh sau:
     ```bash
     python mdao.py
